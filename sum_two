@@ -1,0 +1,10 @@
+def sum(num1:float,num2:float) -> float:
+    '''A function that sums two numbers
+        param:
+            num1: first number
+            num2: seccond number
+        return:
+            The result of a sum
+    '''
+    sum = num1 + num2
+    return sum
