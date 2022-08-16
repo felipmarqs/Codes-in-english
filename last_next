@@ -1,0 +1,13 @@
+def last_next(num:float) -> str:
+    '''A function that receives a number and returns the last and the next number.
+        param:
+            num: a number
+        return:
+            a phrase about what is the last number and what is the next
+
+    '''
+    num = int(input('Enter a number: '))
+    last = num - 1
+    next = num + 1
+    return print(f'The last number was {last} and the next is {next}. The current number is {num}.')
+last_next(10)
