@@ -1,0 +1,12 @@
+def double_triple_square(num:int) -> int:
+    '''A function that receives a number and returns the double, triple and root square 
+    of that number.
+        param:
+            num: any integer number 
+        return:
+            double, triple, square of that number
+    '''
+    double = num * 2
+    triple = num * 3
+    square = num ** (1/2)
+    return double, triple, square
