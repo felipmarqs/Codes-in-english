@@ -1,0 +1,95 @@
+'''
+This module contains functions for strings
+'''
+
+from typing import Union
+
+def count_letters(phrase:str) -> int:
+    ''' Counts the amount of letters in a phrase
+        param: 
+            phrase: any phrase
+        return:
+            returns how many letters are there in a phrase '''
+    cont = 0
+    phrase = phrase.replace(' ', '')
+    for i in range(len(phrase.strip())):
+        cont += 1
+    
+    return cont
+def count_vowels(word:str) -> int:
+    ''' Counts the amount of vowels in a word
+        param: 
+            any word
+        return:
+            returns the amount of vowels of this word
+    
+    
+    '''
+    cont = 0
+    for i in range(len(word)):
+        if word[i].lower() in ['a','e','i','o','u']:
+            cont += 1
+    return cont
+    ...
+def is_palindrome(word:str) -> bool:
+    '''Verifies if a word is a palindrome
+        param:
+            Any word
+        return:
+            Returns if a word is a palindrome
+
+    '''
+    if word[::-1].upper().strip() == word.upper().strip():
+        return True
+    else:
+        return False
+    ...
+def are_capitals(word:str, count:bool = False) -> Union[bool,int]:
+    '''Verifies if there are capitals in a word
+        param:
+            Any word
+            Count = True or False
+        return:
+            If count is True, returns how many capital letters are there
+            If count is False, returns True if there are or False if there are not
+           
+'''
+    if not count:
+        for letter in word:
+            if letter.isupper() == True:
+                return True
+
+    cont = 0
+    if count:
+        for letter in palavra:
+            if letter.isupper() == True:
+                cont += 1
+    return cont
+
+    
+def are_lower(word:str, count:bool = False) -> Union[bool,int]:
+'''Verifies if there are lowercase in a word
+    param:
+        Any word
+        Count = True or False
+    return:
+        If count is True, returns how many lowercase letters are there
+        If count is False, returns True if there are or False if there are not
+        
+
+'''
+    if not count:
+        for letter in word:
+            if letter.islower() == True:
+                return True
+
+    cont = 0
+    if count:
+        for letter in word:
+            if letter.islower() == True:
+                cont += 1
+    return cont
+    ...
+
+if __name__ == '__main__':
+    print(__doc__)
